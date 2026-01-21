@@ -40,8 +40,8 @@ import base64
 # =========================================================
 # CONFIGURATION — DEPARTEMENT (branding + emails + PDF)
 # =========================================================
-DEPT_NAME = "Département Réseaux & Systèmes"
-DEPT_CODE = "RS"
+DEPT_NAME = "Direction des Études ISI Keur Massar"
+DEPT_CODE = "ISIKM"
 
 HEAD_NAME  = "Fallou Seck"
 HEAD_EMAIL = "fseck@groupeisi.com"
