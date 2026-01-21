@@ -43,13 +43,13 @@ import base64
 DEPT_NAME = "Département Réseaux & Systèmes"
 DEPT_CODE = "RS"
 
-HEAD_NAME  = "Latyr Ndiaye"
-HEAD_EMAIL = "landiaye@groupeisi.com"
+HEAD_NAME  = "Fallou Seck"
+HEAD_EMAIL = "fseck@groupeisi.com"
 
 ASSIST_NAME  = ""     # optionnel
 ASSIST_EMAIL = ""     # optionnel
 
-INSTITUTION_NAME = "Institut Supérieur Informatique"
+INSTITUTION_NAME = "Institut Supérieur Informatique (Keur Massar)"
 
 DASHBOARD_LABEL = "Tableau de bord de pilotage mensuel — Suivi des enseignements par classe & par matière"
 
