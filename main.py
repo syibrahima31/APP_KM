@@ -43,13 +43,13 @@ import base64
 DEPT_NAME = "Direction des Études ISI Keur Massar"
 DEPT_CODE = "ISIKM"
 
-HEAD_NAME  = "Fallou Seck"
-HEAD_EMAIL = "fseck@groupeisi.com"
+HEAD_NAME  = "Mouhamed Gueye"
+HEAD_EMAIL = "mgueye@groupeisi.com"
 
-ASSIST_NAME  = ""     # optionnel
-ASSIST_EMAIL = ""     # optionnel
+ASSIST_NAME  = "Fallou Seck"     # optionnel
+ASSIST_EMAIL = "fseck@groupeisi.com"     # optionnel
 
-INSTITUTION_NAME = "Institut Supérieur Informatique (Keur Massar)"
+INSTITUTION_NAME = "Institut Supérieur Informatique — Keur Massar"
 
 DASHBOARD_LABEL = "Tableau de bord de pilotage mensuel — Suivi des enseignements par classe & par matière"
 
