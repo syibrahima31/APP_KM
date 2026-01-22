@@ -1844,8 +1844,8 @@ unsafe_allow_html=True
 st.markdown(
 f"""
 <div class="footer-signature">
-  <strong>{HEAD_NAME}</strong> — Chef de Département • ✉️ {HEAD_EMAIL}
-  {f"<br/><strong>Assistante :</strong> {ASSIST_NAME} • ✉️ {ASSIST_EMAIL}" if ASSIST_NAME and ASSIST_EMAIL else ""}
+  <strong>{HEAD_NAME}</strong> — Directeur des Études • ✉️ {HEAD_EMAIL}
+  {f"<br/><strong>Chef de Département :</strong> {ASSIST_NAME} • ✉️ {ASSIST_EMAIL}" if ASSIST_NAME and ASSIST_EMAIL else ""}
 </div>
 """,
 unsafe_allow_html=True
