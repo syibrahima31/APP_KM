@@ -366,27 +366,36 @@ section[data-testid="stSidebar"]{
   margin-bottom: 10px;
   box-shadow: 0 6px 18px rgba(14,30,37,0.05);
 }
-/* ---- LOGO SIDEBAR ---- */
-.sidebar-logo-wrap{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin: 8px 0 14px 0;
-}
+
+/* =========================================================
+   LOGO SIDEBAR — FIX CENTRAGE + TAILLE
+========================================================= */
 .sidebar-logo-wrap{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 18px 0 20px 0;
+  margin: 14px 0 18px 0;
 }
 
+/* centre le conteneur Streamlit de l'image */
+.sidebar-logo-wrap [data-testid="stImage"]{
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+/* contrôle réel de l'image */
 .sidebar-logo-wrap img{
-  max-width: 150px;     /* largeur max (ajuste 120–160) */
-  max-height: 70px;     /* ✅ empêche le logo d’être trop “long” */
-  width: auto;          /* garde les proportions */
-  height: auto;         /* garde les proportions */
-  object-fit: contain;  /* évite le rognage */
-  border-radius: 14px;
+  display: block !important;
+  margin: 0 auto !important;
+
+  max-width: 150px !important;   /* largeur max */
+  max-height: 55px !important;    /* ✅ hauteur max (corrige ton problème) */
+  width: auto !important;
+  height: auto !important;
+
+  object-fit: contain !important;
+  border-radius: 12px;
   border: 1px solid rgba(227,232,240,0.9);
   background: #FFFFFF;
   padding: 6px;
@@ -1445,7 +1454,6 @@ def sidebar_card(title: str):
 def sidebar_card_end():
     st.markdown("</div>", unsafe_allow_html=True)
 
-
 with st.sidebar:
     from pathlib import Path
 
@@ -1453,12 +1461,12 @@ with st.sidebar:
 
     if LOGO_JPG.exists():
         st.markdown('<div class="sidebar-logo-wrap">', unsafe_allow_html=True)
-        st.image(str(LOGO_JPG), width=140)  # ajuste: 110–160
+        st.image(str(LOGO_JPG), use_container_width=True)  # ✅ IMPORTANT
         st.markdown('</div>', unsafe_allow_html=True)
     else:
         st.markdown(
             f"""
-            <div class="sidebar-logo-wrap" style="font-weight:950;color:#0B3D91;font-size:18px; text-align:center;">
+            <div class="sidebar-logo-wrap" style="font-weight:950;color:#0B3D91;font-size:18px;text-align:center;">
                 {DEPT_CODE}
             </div>
             """,
