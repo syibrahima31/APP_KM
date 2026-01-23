@@ -1453,7 +1453,7 @@ with st.sidebar:
 
     if LOGO_JPG.exists():
         st.markdown('<div class="sidebar-logo-wrap">', unsafe_allow_html=True)
-        st.image(str(LOGO_JPG))
+        st.image(str(LOGO_JPG), width=140)  # ajuste: 110–160
         st.markdown('</div>', unsafe_allow_html=True)
     else:
         st.markdown(
