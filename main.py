@@ -381,15 +381,18 @@ section[data-testid="stSidebar"]{
 }
 
 .sidebar-logo-wrap img{
-  width: 170px;        /* ⬅️ PLUS GRAND */
-  max-width: 100%;
-  height: auto;
-  border-radius: 18px;
+  max-width: 150px;     /* largeur max (ajuste 120–160) */
+  max-height: 70px;     /* ✅ empêche le logo d’être trop “long” */
+  width: auto;          /* garde les proportions */
+  height: auto;         /* garde les proportions */
+  object-fit: contain;  /* évite le rognage */
+  border-radius: 14px;
   border: 1px solid rgba(227,232,240,0.9);
   background: #FFFFFF;
-  padding: 8px;
-  box-shadow: 0 14px 32px rgba(14,30,37,0.12);
+  padding: 6px;
+  box-shadow: 0 10px 22px rgba(14,30,37,0.10);
 }
+
 /* -----------------------------
    INPUTS (lisibilité ++)
 ------------------------------*/
